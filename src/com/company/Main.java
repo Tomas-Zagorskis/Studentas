@@ -16,17 +16,17 @@ public class Main {
             switch (input) {
                 case "1":
 
-                    System.out.print("iveskite studento varda: ");
+                    System.out.print("Iveskite studento varda: ");
                     String vardas = sc.next();
-                    System.out.print("iveskite studento pavarde: ");
+                    System.out.print("Iveskite studento pavarde: ");
                     String pavarde = sc.next();
-                    System.out.print("iveskite studento numeri: ");
+                    System.out.print("Iveskite studento numeri: ");
                     int nr = sc.nextInt();
                     if (studentai.containsKey(nr)){
                         System.out.print("Sis numeris uzimtas, iveskite kita: ");
                         nr = sc.nextInt();
                     }
-                    System.out.print("iveskite studento universiteta: ");
+                    System.out.print("Iveskite studento universiteta: ");
                     String universitetas = sc.next();
                     System.out.println();
                     studentai.put(nr, new Studentas(vardas, pavarde, universitetas));
